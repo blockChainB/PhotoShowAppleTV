@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9046" systemVersion="15A282b" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-1I-cBf">
+                                <rect key="frame" x="100" y="125" width="1720" height="830"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgl-FT-Vka">
+                                        <rect key="frame" x="0.0" y="0.0" width="1720" height="830"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-sY-hp1">
+                                                <rect key="frame" x="0.0" y="0.0" width="1720" height="830"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.69959296860496667" green="0.96671460362470618" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-R8-uis">
+                                                <rect key="frame" x="0.0" y="0.0" width="1720" height="830"/>
+                                                <animations/>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="UXd-sY-hp1" firstAttribute="centerY" secondItem="sgl-FT-Vka" secondAttribute="centerY" id="F8h-IA-nBa"/>
+                                            <constraint firstItem="Jgb-R8-uis" firstAttribute="width" secondItem="sgl-FT-Vka" secondAttribute="width" id="RY4-XM-Ahg"/>
+                                            <constraint firstItem="UXd-sY-hp1" firstAttribute="width" secondItem="sgl-FT-Vka" secondAttribute="width" id="a5e-b4-k4i"/>
+                                            <constraint firstItem="UXd-sY-hp1" firstAttribute="height" secondItem="sgl-FT-Vka" secondAttribute="height" id="eU9-2F-eiw"/>
+                                            <constraint firstItem="Jgb-R8-uis" firstAttribute="height" secondItem="sgl-FT-Vka" secondAttribute="height" id="gtv-34-UPq"/>
+                                            <constraint firstItem="UXd-sY-hp1" firstAttribute="centerX" secondItem="sgl-FT-Vka" secondAttribute="centerX" id="iOX-Kt-FLL"/>
+                                            <constraint firstItem="Jgb-R8-uis" firstAttribute="centerX" secondItem="sgl-FT-Vka" secondAttribute="centerX" id="pH0-Gy-WJi"/>
+                                            <constraint firstItem="Jgb-R8-uis" firstAttribute="centerY" secondItem="sgl-FT-Vka" secondAttribute="centerY" id="ptW-CL-mnU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMz-dZ-JV5">
+                                <rect key="frame" x="520" y="974" width="280" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Going Work"/>
+                                <connections>
+                                    <action selector="touch2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TEy-ao-nAc"/>
+                                    <action selector="touch2:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="uh8-xu-muN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQW-1m-WU5">
+                                <rect key="frame" x="1110" y="974" width="193" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="My life"/>
+                                <connections>
+                                    <action selector="touch3:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="8qA-gM-Yy7"/>
+                                    <action selector="touch3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yi5-wl-8Qa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSm-E9-9vj">
+                                <rect key="frame" x="823" y="974" width="263" height="86"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Our Dublin"/>
+                                <connections>
+                                    <action selector="touch1:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Ahr-rf-dqT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWV-1I-cBf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-250" id="5iI-LR-G1P"/>
+                            <constraint firstItem="IMz-dZ-JV5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-300.5" id="9pe-Dx-Bjp"/>
+                            <constraint firstItem="sgl-FT-Vka" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DDd-qS-CVa"/>
+                            <constraint firstItem="sgl-FT-Vka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dzt-ST-Ftw"/>
+                            <constraint firstItem="gSm-E9-9vj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="477" id="LFh-23-b5k"/>
+                            <constraint firstItem="gSm-E9-9vj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="Pq3-Yg-wgu"/>
+                            <constraint firstItem="eWV-1I-cBf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-200" id="Vbu-52-MGt"/>
+                            <constraint firstItem="TQW-1m-WU5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="246.5" id="dBj-rc-61b"/>
+                            <constraint firstItem="IMz-dZ-JV5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="477" id="fkd-8p-05F"/>
+                            <constraint firstItem="TQW-1m-WU5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="477" id="wQK-m5-HIa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="laView" destination="sgl-FT-Vka" id="Hc4-3U-S6l"/>
+                        <outlet property="limageView" destination="UXd-sY-hp1" id="VYn-vI-f9v"/>
+                        <outlet property="rimageView" destination="Jgb-R8-uis" id="R6t-Ev-9pe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.jpg" width="1818" height="1818"/>
+    </resources>
+</document>
